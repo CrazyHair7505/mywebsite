@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations!</title>
+    <!-- Add any other necessary stylesheets or scripts here -->
+</head>
+<body>
+    <h1>Congratulations!</h1>
+    <div id="confetti-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/konfetti@2.0.4/dist/konfetti.min.js"></script>
+    <script>
+        const confettiContainer = document.getElementById('confetti-container');
+        const confetti = new Konfetti({
+            emitter: {
+                duration: 5, // Duration of the confetti burst
+                perSecond: 30, // Number of confetti particles per second
+            },
+            // Customize other properties as needed
+        });
+        confetti.render(confettiContainer);
+    </script>
+</body>
+</html>
